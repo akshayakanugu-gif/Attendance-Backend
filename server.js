@@ -80,4 +80,4 @@ app.post('/attendance', (req,res)=>{
   res.json({message:"Attendance saved", record: finalRecord});
 });
 
-app.listen(8080, ()=> console.log("Backend Running on http://localhost:8080"));
+app.listen(process.env.PORT||8080, ()=> console.log("Backend Running on http://localhost:8080"));
